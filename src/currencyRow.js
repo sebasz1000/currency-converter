@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function currencyRow(props) {
     const {
-       currencyOptions,
-       selectedCurrency
+        currencyOptions,
+        selectedCurrency
     } = props;
     console.log(typeof selectedCurrency)
     return (
@@ -11,14 +11,16 @@ export default function currencyRow(props) {
             <input type="number" className="input" ></input>
             <select>
                 {
-                    currencyOptions.map( option => 
-                            <option key={option}
-                             value={option}
-                             /*{ ...selectedCurrency === option && SELECTED }*/
-                             >{option}</option>
-                        )
+                    currencyOptions.map(option =>
+                        <option key={option}
+                            value={option}
+                        /*{ ...selectedCurrency === option && SELECTED }*/
+                        >{option}</option>
+                    )
                 }
             </select>
         </div>
     )
 }
+
+

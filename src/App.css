@@ -25,6 +25,7 @@ h1{
     width: 7em;
     font-size: 2em;
     box-shadow: 5px 4px 12px rgba(0,0,0,0.16), -4px -4px 12px rgba(255,255,255,0.9);
+    transition: all ease-in 260ms;
 }
 
 .input:focus{
@@ -41,7 +42,8 @@ h1{
 }
 .currency-row[data-tool-tip]::after{
     transform: translateX(-40px);
-    transition: transform 200ms ease-in;
+    transition: all 200ms ease-in;
+
 }
 .currency-row[data-tool-tip]:hover::after{
     content: attr(data-tool-tip);
